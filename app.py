@@ -5,19 +5,6 @@ PINECONE_ENV=your-pinecone-environment
 
 ---
 
-## requirements.txt
-openai
-langchain
-pinecone-client
-streamlit
-faiss-cpu
-python-dotenv
-guardrails-ai
-tqdm
-sentence-transformers
-
----
-
 ## ingest/ingest_docs.py
 import os
 from langchain.document_loaders import DirectoryLoader
