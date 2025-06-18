@@ -1,0 +1,10 @@
+## requirements.txt
+openai
+langchain
+pinecone-client
+streamlit
+faiss-cpu
+python-dotenv
+guardrails-ai
+tqdm
+sentence-transformers
