@@ -1,10 +1,3 @@
-## .env.example
-OPENAI_API_KEY=your-openai-api-key
-PINECONE_API_KEY=your-pinecone-api-key
-PINECONE_ENV=your-pinecone-environment
-
----
-
 ## ingest/ingest_docs.py
 import os
 from langchain.document_loaders import DirectoryLoader
