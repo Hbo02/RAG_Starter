@@ -1,0 +1,14 @@
+Welcome to Acme AI!
+
+Q: What is Acme AI?
+A: Acme AI helps companies build custom AI solutions using GenAI and RAG pipelines.
+
+Q: How can I get started?
+A: Visit our platform, upload your documents, and deploy an AI-powered assistant within minutes.
+
+Q: What models are supported?
+A: We support OpenAI, Anthropic, Cohere, and open-source models like Mistral and LLaMA.
+
+Q: Is my data secure?
+A: Yes, all data is encrypted at rest and in transit. We also offer private cloud deployments.
+
