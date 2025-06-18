@@ -1,4 +1,8 @@
 ## guardrails/eval_feedback.py
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 from guardrails import Guard
 from llm.rag_chain import ask_rag
 
