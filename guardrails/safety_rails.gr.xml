@@ -1,0 +1,10 @@
+## guardrails/safety_rails.gr.xml
+<guardrails>
+  <output>
+    <type>string</type>
+    <constraints>
+      <length max="1000" />
+      <profanity level="moderate" />
+    </constraints>
+  </output>
+</guardrails>
