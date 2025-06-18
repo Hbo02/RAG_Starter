@@ -1,16 +1,3 @@
-## guardrails/safety_rails.gr.xml
-<guardrails>
-  <output>
-    <type>string</type>
-    <constraints>
-      <length max="1000" />
-      <profanity level="moderate" />
-    </constraints>
-  </output>
-</guardrails>
-
----
-
 ## guardrails/eval_feedback.py
 from guardrails import Guard
 from llm.rag_chain import ask_rag
