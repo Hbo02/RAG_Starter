@@ -8,5 +8,5 @@ openai_key = get_env_var("OPENAI_API_KEY")
 
 def load_retriever():
     embeddings = OpenAIEmbeddings(openai_key = openai_key)
-    db = FAISS.load_local("faiss_index", embeddings)
+    db = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
     return db
