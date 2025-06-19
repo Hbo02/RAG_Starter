@@ -1,5 +1,5 @@
-## guardrails/safety_rails.gr.xml
-<guardrails>
+## rag_guardrails/safety_rails.gr.xml
+<rag_guardrails>
   <output>
     <type>string</type>
     <constraints>
@@ -7,4 +7,4 @@
       <profanity level="moderate" />
     </constraints>
   </output>
-</guardrails>
+</rag_guardrails>
