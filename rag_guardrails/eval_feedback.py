@@ -3,7 +3,7 @@ from guardrails import Guard
 from llm.rag_chain import ask_rag
 import utils.config
 
-guard = Guard.from_preset("rag_guardrails/safety_rails.gr.xml")
+guard = Guard.for_rail("rag_guardrails/safety_rails.gr.xml")
 
 def guarded_ask(query):
     raw_output = ask_rag(query)
