@@ -4,9 +4,13 @@ from langchain.document_loaders import TextLoader, PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import FAISS
 from langchain.embeddings import OpenAIEmbeddings
-from dotenv import load_dotenv
 
-load_dotenv()
+import utils.config 
+from utils.config import get_env_var
+openai_api_key=get_env_var("OPENAI_API_KEY")
+
+#from dotenv import load_dotenv
+#load_dotenv()
 
 SUPPORTED_EXTENSIONS = [".pdf", ".txt", ".md"]
 
@@ -48,7 +52,7 @@ def ingest():
     docs = splitter.split_documents(raw_docs)
 
     print(f"🧠 Creating embeddings for {len(docs)} chunks...")
-    embeddings = OpenAIEmbeddings()
+    embeddings = OpenAIEmbeddings(openai_api_key = openai_api_key)
     db = FAISS.from_documents(docs, embeddings)
 
     print("💾 Saving FAISS index to 'faiss_index/'")
