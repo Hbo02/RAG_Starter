@@ -9,8 +9,6 @@ import utils.config
 from utils.config import get_env_var
 openai_api_key=get_env_var("OPENAI_API_KEY")
 
-#from dotenv import load_dotenv
-#load_dotenv()
 
 SUPPORTED_EXTENSIONS = [".pdf", ".txt", ".md"]
 
