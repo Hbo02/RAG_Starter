@@ -7,7 +7,7 @@ from utils.config import get_env_var
 
 openai_api_key=get_env_var("OPENAI_API_KEY")
 
-retriever = load_retriever()
+retriever = load_retriever().as_retriever()
 llm = ChatOpenAI(temperature=0, openai_api_key = openai_api_key)
 rag_chain = RetrievalQA.from_chain_type(llm=llm, retriever=retriever)
 
