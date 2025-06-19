@@ -1,6 +1,7 @@
 ## rag_guardrails/eval_feedback.py
 from guardrails import Guard
 from llm.rag_chain import ask_rag
+import utils.config
 
 guard = Guard.from_preset("rag_guardrails/safety_rails.gr.xml")
 
