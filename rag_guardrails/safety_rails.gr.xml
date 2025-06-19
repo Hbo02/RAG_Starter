@@ -1,4 +1,3 @@
-## rag_guardrails/safety_rails.gr.xml
 <guardrails>
   <output>
     <type>string</type>
