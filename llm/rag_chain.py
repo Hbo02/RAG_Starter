@@ -1,6 +1,6 @@
 ## llm/rag_chain.py
 from langchain.chains import RetrievalQA
-from langchain.chat_models import ChatOpenAI
+from langchain_community.chat_models import ChatOpenAI
 from retriever.faiss_retriever import load_retriever
 import utils.config 
 from utils.config import get_env_var
