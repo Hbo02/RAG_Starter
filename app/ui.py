@@ -4,6 +4,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+import utils.config 
 from rag_guardrails.eval_feedback import guarded_ask
 
 st.set_page_config(page_title="RAG Product Starter")
