@@ -3,7 +3,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from rag_guardrails import Guard
+from guardrails import Guard
 from llm.rag_chain import ask_rag
 
 guard = Guard.from_preset("guardrails/safety_rails.gr.xml")
